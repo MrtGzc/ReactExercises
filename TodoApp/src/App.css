@@ -112,3 +112,38 @@ textarea{
   
 }
 /*  Todo */
+
+
+/* Ekran boyutlarına göre düzenlemeler */
+
+/* Küçük ekranlar için */
+@media only screen and (max-width: 600px) {
+  .appContainer {
+    margin: 0;
+  }
+
+  .addTodosContainer {
+    width: 90%;
+  }
+
+  .todoContainer {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}
+
+/* Orta ekranlar için */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .appContainer {
+    margin: 0;
+  }
+
+  .addTodosContainer {
+    width: 70%;
+  }
+
+  .todoContainer {
+    width: 45%;
+    margin: 1rem;
+  }
+}
