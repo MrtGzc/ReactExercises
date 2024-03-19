@@ -27,7 +27,7 @@ function App() {
       todos.map((todo) => {
         if (todo.id === id) {
           return {
-            ...todos,
+            ...todo,
             title: newTitle,
             desc: newDesc,
           };
