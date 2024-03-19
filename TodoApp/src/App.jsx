@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="appContainer">
       <Addtodos todoDatas={todoDatas}></Addtodos>
-      <Todos></Todos>
+      <Todos todos={todos}></Todos>
     </div>
   );
 }

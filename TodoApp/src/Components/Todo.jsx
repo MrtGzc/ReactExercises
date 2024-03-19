@@ -1,10 +1,10 @@
-function Todo() {
+function Todo({todo}) {
   return (
     <div className="todoContainer">
       <h3>Title</h3>
-      <p>asda sdasd asdasdasdasd</p>
+      <p>{todo.title}</p>
       <h3>Description</h3>
-      <p>asdasds ad asdsadada dasdasdas dasdasda</p>
+      <p>{todo.desc}</p>
       <div className="buttons">
         <button className="deleteBtn">Delete</button>
         <button className="updateBtn">Update</button>

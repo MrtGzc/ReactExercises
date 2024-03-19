@@ -1,13 +1,13 @@
 import Todo from "../Components/Todo";
 
-function Todos() {
+function Todos({todos}) {
   return (
     <div className="todosContainer">
-      <Todo></Todo>
-      <Todo></Todo>
-      <Todo></Todo>
-      <Todo></Todo>
-      <Todo></Todo>
+      {
+        todos.map(todo => {
+         return (<Todo todo={todo}></Todo>)
+        })
+      }
     </div>
   );
 }
