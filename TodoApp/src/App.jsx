@@ -17,10 +17,14 @@ function App() {
     ]);
   };
 
+  const deletedTodoId = id => {
+    settodos(todos.filter(todo => todo.id !== id));
+  }
+
   return (
     <div className="appContainer">
       <Addtodos todoDatas={todoDatas}></Addtodos>
-      <Todos todos={todos}></Todos>
+      <Todos todos={todos} deletedTodoId={deletedTodoId}></Todos>
     </div>
   );
 }

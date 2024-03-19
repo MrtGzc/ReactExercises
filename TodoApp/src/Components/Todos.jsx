@@ -1,11 +1,11 @@
 import Todo from "../Components/Todo";
 
-function Todos({todos}) {
+function Todos({todos,deletedTodoId}) {
   return (
     <div className="todosContainer">
       {
         todos.map(todo => {
-         return (<Todo todo={todo}></Todo>)
+         return (<Todo key={todo.id} todo={todo} deletedTodoId={deletedTodoId}></Todo>)
         })
       }
     </div>
