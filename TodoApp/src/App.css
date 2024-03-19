@@ -103,4 +103,12 @@
   background-color: blue;
 }
 
+textarea{
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: .5rem;
+  width: 100%;
+  outline: none;
+  
+}
 /*  Todo */

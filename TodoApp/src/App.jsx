@@ -17,14 +17,34 @@ function App() {
     ]);
   };
 
-  const deletedTodoId = id => {
-    settodos(todos.filter(todo => todo.id !== id));
-  }
+  const deletedTodoId = (id) => {
+    settodos(todos.filter((todo) => todo.id !== id));
+  };
+
+  
+  const changeTodoid = (newTitle, newDesc, id) => {
+    settodos(
+      todos.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todos,
+            title: newTitle,
+            desc: newDesc,
+          };
+        }
+        return todo;
+      })
+    );
+  };
 
   return (
     <div className="appContainer">
       <Addtodos todoDatas={todoDatas}></Addtodos>
-      <Todos todos={todos} deletedTodoId={deletedTodoId}></Todos>
+      <Todos
+        todos={todos}
+        deletedTodoId={deletedTodoId}
+        changeTodoid={changeTodoid}
+      ></Todos>
     </div>
   );
 }

@@ -1,13 +1,18 @@
 import Todo from "../Components/Todo";
 
-function Todos({todos,deletedTodoId}) {
+function Todos({ todos, deletedTodoId, changeTodoid }) {
   return (
     <div className="todosContainer">
-      {
-        todos.map(todo => {
-         return (<Todo key={todo.id} todo={todo} deletedTodoId={deletedTodoId}></Todo>)
-        })
-      }
+      {todos.map((todo) => {
+        return (
+          <Todo
+            key={todo.id}
+            todo={todo}
+            deletedTodoId={deletedTodoId}
+            changeTodoid={changeTodoid}
+          ></Todo>
+        );
+      })}
     </div>
   );
 }
