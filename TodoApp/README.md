@@ -39,4 +39,3 @@
 **Link to the live project / Canlı projenin bağlantısı:** [Simple To-Do Application](https://mertgezici.com/todoapp/)
 
 ![alt text](Ekran%20görüntüsü%202024-03-20%20005933.png)
-![alt text](Ekran%20görüntüsü%202024-03-20%20010023.png)
