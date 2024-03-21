@@ -6,7 +6,7 @@ import Todos from "./Components/Todos";
 function App() {
   const [todos, settodos] = useState([]);
 
-  const todoDatas = (todoTitle, TodoDesc) => {
+  const todoDatas = (todoTitle, TodoDesc) => { 
     settodos([
       ...todos,
       {
