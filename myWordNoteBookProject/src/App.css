@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* APP */
+
+.appContainer {
+  background-color: #384152;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* Ana konteynırı göreceli bir konuma ayarla */
+}
+
+.wordTurn {
+  font-size: 2rem;
+  position: absolute; /* Sabit pozisyon */
+  top: 5rem; /* Üst kenara 1rem mesafede */
+}
+
+.wordTr {
+  font-size: 10rem;
+  position: absolute; /* Sabit pozisyon */
+  top: 10rem; /* Üst kenara 5rem mesafede */
+}
+
+.wordEng {
+  font-size: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.sentenceEng {
+  font-size: 3rem;
+}
+
+.sentenceTr {
+  font-size: 1.5rem;
+}
+
+.appContainer .btns {
+  position: absolute; /* Butonları sabit bir konuma ayarla */
+  bottom: 10rem; /* Alt kenara 1rem mesafede */
+}
+
+.addButton {
+  position: absolute; /* Sabit pozisyon */
+  top: 1rem; /* Üst kenara 1rem mesafede */
+  right: 1rem; /* Sağ kenara 1rem mesafede */
+  padding: .5rem 1.5rem;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.learnedWordsBtn{
+  position: absolute; /* Sabit pozisyon */
+  top: 1rem; /* Üst kenara 1rem mesafede */
+  left: 1rem; /* Sağ kenara 1rem mesafede */
+  padding: .5rem 1.5rem;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+
+.appContainer .btns button {
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin: 1rem;
+  font-size: larger;
+}
+
+
+.addWordContainer {
+  position: absolute;
+  top: 4rem; /* Header'dan 3rem aşağıda */
+  right: 1rem; /* Sağ kenara 3rem mesafede */
+  background-color: orange; /* Arka plan rengi */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+
+.addWordContainer input {
+  display: block;
+  margin-bottom: 1rem;
+  width: 250px; /* Input alanının genişliği */
+  padding: 0.5rem;
+  border: 1px solid #ccc; /* Kenarlık rengi */
+  border-radius: 10px;
+  outline: none;
+}
+.addWordContainer button{
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: x-large;
+}
+
+.addWordContainer input:last-child {
+  margin-bottom: 0; /* Son input alanının alt boşluğunu kaldır */
+}
