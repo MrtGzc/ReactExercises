@@ -1,48 +1,6 @@
 {
   "unknownwords": [
     {
-      "id": "0e57",
-      "wordTr": "Gündüz",
-      "wordEng": "Daytime",
-      "sentenceTr": "Gündüzleri dışarı çıkarım",
-      "sentenceEng": "I go out during the daytime"
-    },
-    {
-      "id": "3b29",
-      "wordTr": "Sabah",
-      "wordEng": "Morning",
-      "sentenceTr": "Sabahları kahvaltı yaparım",
-      "sentenceEng": "I have breakfast in the mornings"
-    },
-    {
-      "id": "9f41",
-      "wordTr": "Akşam",
-      "wordEng": "Evening",
-      "sentenceTr": "Akşamları yürüyüşe çıkarım",
-      "sentenceEng": "I go for a walk in the evenings"
-    },
-    {
-      "id": "7e6a",
-      "wordTr": "Hafta",
-      "wordEng": "Week",
-      "sentenceTr": "Hafta sonu arkadaşlarımla buluşuyorum",
-      "sentenceEng": "I meet up with my friends on the weekends"
-    },
-    {
-      "id": "8a90",
-      "wordTr": "Yıl",
-      "wordEng": "Year",
-      "sentenceTr": "Yeni yılın ilk günü tatil",
-      "sentenceEng": "The first day of the new year is a holiday"
-    },
-    {
-      "id": "2f7d",
-      "wordTr": "Dakika",
-      "wordEng": "Minute",
-      "sentenceTr": "5 dakika sonra geleceğim",
-      "sentenceEng": "I will come in 5 minutes"
-    },
-    {
       "id": "b1e2",
       "wordTr": "Saat",
       "wordEng": "Hour",
@@ -50,27 +8,76 @@
       "sentenceEng": "I will be here in an hour"
     },
     {
-      "id": "fa34",
-      "wordTr": "Zaman",
-      "wordEng": "Time",
-      "sentenceTr": "Zamanı iyi kullanmalısın",
-      "sentenceEng": "You should use your time wisely"
+      "id": "ca58",
+      "wordTr": "Sabah",
+      "wordEng": "Morning",
+      "sentenceTr": "Sabahları kahvaltı yaparım",
+      "sentenceEng": "I have breakfast in the mornings"
     },
-    {
-      "id": "59d2",
-      "wordTr": "Yılbaşı",
-      "wordEng": "New Year",
-      "sentenceTr": "Yılbaşı gecesi partideydim",
-      "sentenceEng": "I was at a party on New Year's Evening"
-    }
-  ],
-  "knownwords": [
     {
       "id": "a10e",
       "wordTr": "Ay",
       "wordEng": "Month",
       "sentenceTr": "Yılın ikinci ayı şubat",
       "sentenceEng": "The second month of the year is February"
+    },
+    {
+      "id": "9623",
+      "wordTr": "Ay",
+      "wordEng": "Month",
+      "sentenceTr": "Yılın ikinci ayı şubat",
+      "sentenceEng": "The second month of the year is February"
+    },
+    {
+      "id": "7090",
+      "wordTr": "Gündüz",
+      "wordEng": "Daytime",
+      "sentenceTr": "Gündüzleri dışarı çıkarım",
+      "sentenceEng": "I go out during the daytime"
+    }
+  ],
+  "knownwords": [
+    {
+      "id": "268a",
+      "wordTr": "Hafta",
+      "wordEng": "Week",
+      "sentenceTr": "Hafta sonu arkadaşlarımla buluşuyorum",
+      "sentenceEng": "I meet up with my friends on the weekends"
+    },
+    {
+      "id": "bbfd",
+      "wordTr": "Yılbaşı",
+      "wordEng": "New Year",
+      "sentenceTr": "Yılbaşı gecesi partideydim",
+      "sentenceEng": "I was at a party on New Year's Evening"
+    },
+    {
+      "id": "620f",
+      "wordTr": "Zaman",
+      "wordEng": "Time",
+      "sentenceTr": "Zamanı iyi kullanmalısın",
+      "sentenceEng": "You should use your time wisely"
+    },
+    {
+      "id": "fd83",
+      "wordTr": "Dakika",
+      "wordEng": "Minute",
+      "sentenceTr": "5 dakika sonra geleceğim",
+      "sentenceEng": "I will come in 5 minutes"
+    },
+    {
+      "id": "7400",
+      "wordTr": "Akşam",
+      "wordEng": "Evening",
+      "sentenceTr": "Akşamları yürüyüşe çıkarım",
+      "sentenceEng": "I go for a walk in the evenings"
+    },
+    {
+      "id": "3012",
+      "wordTr": "Yıl",
+      "wordEng": "Year",
+      "sentenceTr": "Yeni yılın ilk günü tatil",
+      "sentenceEng": "The first day of the new year is a holiday"
     }
   ]
 }

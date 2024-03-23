@@ -9,10 +9,10 @@ function App() {
   const [words, setWords] = useState([
     {
       id: "1",
-      word: "merhaba",
-      eng: "hello",
-      sentence: "I said hello to him",
-      turkish_sentence: "Ona merhaba dedim",
+      wordTr: "merhaba",
+      wordEng: "hello",
+      sentenceTr: "I said hello to him",
+      sentenceEng: "Ona merhaba dedim",
     },
   ]);
   const [wordNumber, setwordNumber] = useState(0);
@@ -39,30 +39,49 @@ function App() {
   };
 
   const learned = async () => {
-    await axios.delete(
-      `http://localhost:3000/unknownwords/${words[wordNumber].id}`
-    );
-    getWords();
     if (words.length === 0) {
-      setwordNumber(0); // Silindikten sonra boşsa 0'a ayarla
-    } else if (wordNumber + 1 === words.length) {
-      setwordNumber(wordNumber - 1);
+      setwordNumber(0);
+      return;
     }
+    if(words.length === wordNumber+1){
+      setwordNumber(wordNumber-1)
+    }
+
+    const currentWordNumber =
+      wordNumber >= words.length ? words.length - 1 : wordNumber;
+    const currentWord = words[currentWordNumber];
+
+    if (!currentWord) {
+      // Eğer currentWord undefined ise, işlemi sonlandır
+      return;
+    }
+
+    await axios.delete(`http://localhost:3000/unknownwords/${currentWord.id}`);
+    getWords();
+
+    if (currentWordNumber === words.length - 1) {
+      setwordNumber(0);
+    } else {
+      setwordNumber(currentWordNumber);
+    }
+
     await axios.post("http://localhost:3000/knownwords", {
-      wordTr: words[wordNumber].wordTr,
-      wordEng: words[wordNumber].wordEng,
-      sentenceTr: words[wordNumber].sentenceTr,
-      sentenceEng: words[wordNumber].sentenceEng,
+      wordTr: currentWord.wordTr,
+      wordEng: currentWord.wordEng,
+      sentenceTr: currentWord.sentenceTr,
+      sentenceEng: currentWord.sentenceEng,
     });
   };
-  
 
   useEffect(() => {
     getWords();
   }, [learned]);
+
   return (
     <div className="appContainer">
-      <button className="addButton" onClick={addWordStatus}>Yeni Bir Kelime Ekle</button>
+      <button className="addButton" onClick={addWordStatus}>
+        Yeni Bir Kelime Ekle
+      </button>
       <button className="learnedWordsBtn">Öğrenilen Kelimeleri Göster</button>
       {addStatus ? <AddWordComponent></AddWordComponent> : <div></div>}
       <p className="wordTurn">
